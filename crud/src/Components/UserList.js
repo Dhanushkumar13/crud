@@ -18,7 +18,7 @@ export const UserList = () => {
           {users.map(user => (
             <ListGroupItem className="d-flex" key={user.id}>
               <strong>{user.name}</strong>
-              <div className="ml-auto" style={{display:"flex", marginLeft:"100px"}}>
+              <div className="ml-auto" style={{ display: "flex", marginLeft: "auto", marginRight: "20px" }}>
                 <Link to={`/edit/${user.id}`} color="warning" className="btn btn-warning mr-1">Edit</Link>
                 <Button style={{display:"flex", marginLeft:"10px"}}  onClick={() => removeUser(user.id)} color="danger">Delete</Button>
               </div>
